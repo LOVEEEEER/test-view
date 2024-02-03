@@ -1,0 +1,16 @@
+@import "../../../assets/constants.module.scss";
+
+.button {
+  cursor: pointer;
+  display: flex;
+  padding: 7px 22px 7px 25px;
+  align-items: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  border: $color_strokes-primary 1px solid;
+  > span {
+    @include get-text(16px, 500);
+    margin-left: 13px;
+  }
+}

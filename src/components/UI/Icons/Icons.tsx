@@ -1,0 +1,20 @@
+import { FC } from "react";
+import { ReactComponent as Human } from "../../../assets/icons/human.svg";
+import { ReactComponent as Letter } from "../../../assets/icons/letter.svg";
+import { ReactComponent as Lock } from "../../../assets/icons/lock.svg";
+import { ReactComponent as Exit } from "../../../assets/icons/exit.svg";
+import { ReactComponent as Pencil } from "../../../assets/icons/pencil.svg";
+import { ReactComponent as Photo } from "../../../assets/icons/foto.svg";
+import { ReactComponent as Arrow } from "../../../assets/icons/arrow.svg";
+import { ReactComponent as Image } from "../../../assets/icons/image.svg";
+import { ReactComponent as Trash } from "../../../assets/icons/trash.svg";
+
+export const HumanIcon: FC = () => <Human />;
+export const LetterIcon: FC = () => <Letter />;
+export const LockIcon: FC = () => <Lock />;
+export const PencilIcon: FC = () => <Pencil />;
+export const ExitIcon: FC = () => <Exit />;
+export const PhotoIcon: FC = () => <Photo />;
+export const ArrowIcon: FC = () => <Arrow />;
+export const ImageIcon: FC = () => <Image />;
+export const TrashIcon: FC = () => <Trash />;

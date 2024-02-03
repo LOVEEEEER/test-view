@@ -1,0 +1,32 @@
+@import "../../../../assets/constants.module.scss";
+.register_screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $color_background-secondary;
+  .register {
+
+    width: 400px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 5px;
+    border: $color_strokes-secondary 1px solid;
+
+  }
+}
+
+@media (max-width: $width_mobile) {
+  .register_screen {
+    margin-top: $height_navigation;
+    align-items: flex-start;
+    .register {
+      border: none;
+      border-radius: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

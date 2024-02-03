@@ -1,0 +1,39 @@
+@import "../../../assets/constants.module.scss";
+.screen {
+  padding-top: $height_navigation;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  background-color: white;
+  height: 100vh;
+  .avatar {
+    position: absolute;
+    top: 150px + $height_navigation;
+    left: 240px;
+  }
+  .body {
+    padding-left: 240px;
+    padding-right: 240px;
+    width: 100%;
+    > div {
+      margin-bottom: 30px;
+    }
+    > span {
+      width: 600px;
+
+      @include get-text(16px);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .screen {
+    .avatar {
+      left: 30px;
+    }
+    .body {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}

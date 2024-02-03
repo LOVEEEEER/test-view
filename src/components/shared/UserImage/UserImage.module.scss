@@ -1,0 +1,23 @@
+@import "../../../assets/constants.module.scss";
+
+.user_image {
+  overflow: hidden;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_background-secondary;
+  border: solid $color_strokes-secondary 1px;
+  min-width: 50px;
+  min-height: 50px;
+  .image {
+    object-fit: cover;
+  }
+  > div {
+    text-transform: uppercase;
+    user-select: none;
+    @include get-text(18px, 400);
+  }
+}

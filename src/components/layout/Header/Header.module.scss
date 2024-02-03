@@ -1,0 +1,35 @@
+@import "../../../assets/constants.module.scss";
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  border: $color_strokes-secondary 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  .title {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    > div {
+      margin-left: 20px;
+      max-width: 225px;
+      @include get-text(16px);
+    }
+  }
+}
+
+@media (max-width: $width_mobile) {
+  .header {
+    .title {
+      > div {
+        display: none;
+      }
+    }
+  }
+}

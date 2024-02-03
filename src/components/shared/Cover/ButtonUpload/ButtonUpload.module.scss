@@ -1,0 +1,17 @@
+@import "../../../../assets/constants.module.scss";
+
+.button {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid $color_strokes-primary;
+  border-radius: 5px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  .text {
+    @include get-text(16px, 500);
+    margin-right: 12px;
+    margin-left: 15px;
+  }
+}

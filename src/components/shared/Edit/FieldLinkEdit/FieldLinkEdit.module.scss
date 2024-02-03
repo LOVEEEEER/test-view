@@ -1,0 +1,53 @@
+@import "../../../../assets/constants.module.scss";
+.field {
+  display: block;
+  width: 100%;
+  position: relative;
+  > span {
+    @include get-text(16px, 500, $color_grey);
+  }
+  .input {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+
+    > input {
+      border: $color_strokes-primary solid 1px;
+      outline: none;
+      border-radius: 5px;
+      width: 100%;
+      padding: 12px 20px 12px 142px;
+      @include get-text(16px);
+      transition: all 0.3s linear;
+      &:focus {
+        border: $color_grey solid 1px;
+      }
+      &:focus + div {
+        border: $color_grey solid 1px;
+      }
+    }
+
+    > div {
+      top: 0;
+      left: 0;
+      height: 100%;
+      position: absolute;
+      padding: 12px 20px;
+      border-right: 1px $color_strokes-primary solid;
+      @include get-text(16px, 400, $color_grey);
+      background-color: $color_background-secondary;
+      border-radius: 5px 0px 0px 5px;
+      border: $color_strokes-primary 1px solid;
+      max-width: 122px;
+      transition: all 0.3s linear;
+    }
+  }
+  .error {
+    @include get-text(16px, 500);
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+  }
+}

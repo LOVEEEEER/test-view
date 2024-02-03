@@ -1,0 +1,32 @@
+@import "../../../../assets/constants.module.scss";
+
+.field {
+  display: block;
+  width: 100%;
+  position: relative;
+  > span {
+    @include get-text(16px, 500, $color_grey);
+  }
+  > textarea {
+    padding: 12px 20px;
+    display: block;
+    width: 100%;
+    height: 160px;
+    border: $color_strokes-secondary 1px solid;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 5px;
+    @include get-text(16px);
+    transition: all 0.3s linear;
+    &:focus {
+      outline: none;
+      border: $color_grey 1px solid;
+    }
+  }
+  .error {
+    @include get-text(16px, 500);
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+  }
+}

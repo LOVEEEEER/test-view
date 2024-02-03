@@ -1,0 +1,43 @@
+@import "../../../assets/constants.module.scss";
+.edit {
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s linear;
+  z-index: 11;
+  .modal {
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 600px;
+
+    background-color: white;
+  }
+}
+.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+}
+
+@media (max-width: 700px) {
+  .edit {
+    z-index: 2;
+    .modal {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      margin-top: $height_navigation + 30px;
+      border-radius: 0;
+      border: none;
+    }
+  }
+}

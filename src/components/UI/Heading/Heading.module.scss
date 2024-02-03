@@ -1,0 +1,5 @@
+@import "../../../assets/constants.module.scss";
+
+.title {
+  @include get-text(30px, 500);
+}

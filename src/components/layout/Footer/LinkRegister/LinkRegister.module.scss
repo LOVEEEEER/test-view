@@ -1,0 +1,11 @@
+@import "../../../../assets/constants.module.scss";
+
+.link_register {
+  @include get-text(16px);
+  > span {
+    color: $color_grey;
+  }
+  .link {
+    font-weight: 500;
+  }
+}

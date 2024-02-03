@@ -1,0 +1,17 @@
+$color_strokes-secondary: #e6e6e6;
+$color_strokes-primary: #d5d5d5;
+$color_grey: #838383;
+$color_background-secondary: #f3f3f3;
+
+
+$font_inter: "Inter", sans-serif;
+
+$width_mobile: 520px;
+$height_navigation: 80px;
+
+@mixin get-text($size, $weight: 400, $color: #000000) {
+  font-family: $font_inter;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}

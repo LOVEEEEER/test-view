@@ -1,0 +1,23 @@
+@import "../../../assets/constants.module.scss";
+
+.default {
+  width: 100%;
+  padding: 12px 0px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.light {
+  @include get-text(16px, 500);
+  transition: all 0.3s linear;
+  background-color: white;
+
+}
+.dark {
+  @include get-text(16px, 500);
+  color: white;
+  background-color: black;
+  transition: all 0.3s linear;
+ 
+}

@@ -1,0 +1,20 @@
+.form {
+  width: 100%;
+  display: block;
+  .name {
+    margin-top: 25px;
+  }
+  .slug {
+    margin-top: 30px;
+  }
+  .description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .buttons {
+    display: flex;
+    > button:first-child {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../../../assets/constants.module.scss";
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 30px;
+  .name {
+    @include get-text(16px);
+    margin-right: 20px;
+  }
+}

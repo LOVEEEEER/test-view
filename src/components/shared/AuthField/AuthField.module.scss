@@ -1,0 +1,55 @@
+@import "../../../assets/constants.module.scss";
+
+.auth_field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  .field {
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px 12px 55px;
+    border: solid $color_strokes-primary 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    background-color: white;
+    @include get-text(16px, 400);
+    transition: all 0.2s linear;
+    &:focus {
+      border: $color_grey 1px solid;
+    }
+    &::-ms-reveal {
+      display: none;
+    }
+  }
+  > input:focus + .eye *,
+  > input:valid + .eye * {
+    transition: 0.2s linear;
+    fill: black;
+  }
+
+  .eye {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $color_strokes-secondary;
+
+    cursor: pointer;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+  }
+  .error {
+    position: absolute;
+    left: 15px;
+    bottom: -23px;
+    width: 100%;
+    @include get-text(16px);
+  }
+}

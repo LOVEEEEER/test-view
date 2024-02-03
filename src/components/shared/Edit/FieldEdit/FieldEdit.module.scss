@@ -1,0 +1,30 @@
+@import "../../../../assets/constants.module.scss";
+
+.field {
+  display: block;
+  width: 100%;
+  position: relative;
+  > span {
+    @include get-text(16px, 500, $color_grey);
+  }
+  > input {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    border: $color_strokes-primary 1px solid;
+    border-radius: 5px;
+    padding: 12px 20px;
+    @include get-text(16px, 400);
+    transition: all 0.3s linear;
+    &:focus {
+      outline: none;
+      border: 1px $color_grey solid;
+    }
+  }
+  .error {
+    @include get-text(16px, 500);
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+  }
+}

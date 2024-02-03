@@ -1,0 +1,33 @@
+@import "../../../../assets/constants.module.scss";
+
+.item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 70px;
+  box-sizing: border-box;
+
+  border-bottom: 1px $color_background-secondary solid;
+
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+
+    .name {
+      @include get-text(16px, 500);
+    }
+    .email {
+      @include get-text(16px, 400, $color_grey);
+    }
+  }
+}
+
+@media (max-width: $width_mobile) {
+  .item {
+    .contacts {
+      flex-direction: column;
+    }
+  }
+}

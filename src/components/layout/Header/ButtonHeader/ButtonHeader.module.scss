@@ -1,0 +1,10 @@
+@import "../../../../assets/constants.module.scss";
+.button {
+  padding: 7px 33px;
+  cursor: pointer;
+  margin-right: 30px;
+  background-color: white;
+  @include get-text(16px, 500);
+  border: $color_strokes-primary 1px solid;
+  border-radius: 5px;
+}
